@@ -8,42 +8,42 @@ const MODEL_URL = "https://teachablemachine.withgoogle.com/models/SEU_MODELO_AQU
 /* A chave de cada item precisa ser EXATAMENTE igual ao nome da classe do Teachable Machine.
    Os dados abaixo são exemplos de estrutura. Substitua pelos dados reais conferidos nos rótulos.
 */
-const ALUNOS = {
-  "Eder soares": {
-    nome: "Eder soares",
+const PRODUTOS = {
+  "Zolpidem": {
+    nome: "Zolpidem",
     imagem: "assets/img/produtos/nao-cadastrado.svg",
-    descricao: "Aluno da escola josé ciro nogueira machado",
-    mora:"solonopole-ce",
-    idade: "15 anos",
-    nascimento:"16/03/2011",
-     gênero: "hetero",
-    caracteristicas:"cebelo ondulado,branco,usa oculos,alto",
-
-    
+    utilidade: "-Ajuda pessoas que têm dificuldade para adormecer ou manter o sono. -É receitado para uso breve, geralmente por um período máximo de duas a quatro semanas. ",
+    descricao: "O zolpidem é um medicamento hipnótico indicado para o tratamento de curto prazo da insônia ocasional, transitória ou crônica.",
+    efeitocolateral: "-Efeitos colaterais:Pode causar sonambulismo, amnésia temporária e comportamentos sob o efeito do remédio sem que a pessoa se lembre no dia seguinte (como comer ou enviar mensagens). -Dependência: O uso prolongado ou em doses maiores do que o recomendado pode gerar tolerância e dependência física ou psicológica. -Controle: No Brasil, a venda exige receita médica controlada (receita de cor azul) devido aos riscos associados ao uso inadequado.",
   },
-  "João gabriel": {
-    nome: "João gabriel",
+  "Dipirona": {
+    nome: "Dipirona",
     imagem: "assets/img/produtos/nao-cadastrado.svg",
-    descricao: "Aluno da escola josé ciro nogueira machado",
-    mora:"solonopole-ce",
-    idade: "16 anos",
-    nascimento:"03/06/2010",
-     gênero: "hetero",
-    caracteristicas:"cebelo ondulado,pardo,usa oculos,alto",
-
-
-
- "Pedro rennan": {
-    nome: "Pedro rennan",
+    utilidade: "-Alívio da dor: Indicada para dores de intensidade leve a moderada, como dor de cabeça, dor muscular, dor de dente e cólicas. -Controle da febre: Usada para reduzir a temperatura corporal elevada em quadros infecciosos ou gripais.",
+    descricao: "A dipirona (também conhecida como metamizol) é um dos medicamentos analgésicos e antipiréticos (contra a dor e a febre) mais amplamente utilizados no Brasil.",
+    efeitocolateral: "-Pressão baixa: Pode causar queda de pressão, especialmente na versão injetável. -Alergias: É contra indicada para pessoas com histórico de alergia à dipirona ou a outras pirazolonas. -Uso excessivo: Tomar analgésicos simples com muita frequência (mais de três vezes por semana) pode provocar dor de cabeça por efeito rebote.",
+  },
+  "Paracetamol": {
+    nome: "Paracetamol",
     imagem: "assets/img/produtos/nao-cadastrado.svg",
-    descricao: "Aluno da escola josé ciro nogueira machado",
-    mora:"solonopole-ce",
-    idade: "15 anos",
-    nascimento:"17/12/2010",
-    gênero: "hetero",
-    caracteristicas:"cebelo liso,branco,usa oculos,alto",
-
-  }
+    utilidade: "-Alívio da dor: Indicado para dor de cabeça, dor muscular, dor de dente, cólicas menstruais e dores associadas a gripes ou resfriados. -Controle da febre: Atua no sistema nervoso central para baixar a temperatura corporal.",
+    descricao: "O paracetamol (também conhecido como acetaminofeno) é um dos medicamentos mais utilizados no mundo para o alívio temporário de dores leves a moderadas e redução da febre.",
+    efeitocolateral: "-Dose máxima: O uso excessivo pode causar lesões graves no fígado. Adultos geralmente não devem ultrapassar a dose máxima diária recomendada (comumente de 4 gramas). -Orientação médica: Consulte sempre a bula ou um profissional de saúde para saber a dosagem correta conforme o peso e a idade",
+  },
+  "Caverdilol": {
+    nome: "Caverdilol",
+    imagem: "assets/img/produtos/nao-cadastrado.svg",
+    utilidade: "-Hipertensão arterial: Reduz a pressão alta, isoladamente ou junto com outros remédios. -Insuficiência cardíaca: Melhora a função do coração e protege contra o desgaste contínuo. -Angina do peito: Alivia a dor no peito causada por falta de sangue no coração.",
+    descricao: "O carvedilol é um medicamento betabloqueador com ação vasodilatadora, usado principalmente para tratar a pressão alta, a insuficiência cardíaca e a angina (dor no peito).",
+    efeitocolateral: "-Tontura e queda de pressão ao levantar rápido (hipotensão ortostática). -Batimento cardíaco muito lento (bradicardia). -Cansaço físico ou fadiga. -Dificuldade respiratória em pessoas com asma ou problemas pulmonares.",
+  },
+  "Bromoprida": {
+    nome: "Bromoprida",
+    imagem: "assets/img/produtos/nao-cadastrado.svg",
+    utilidade: "-Náuseas e vômitos: Alivia enjoos causados por cirurgias, infecções, problemas metabólicos ou uso de outros remédios. -Distúrbios motores: Melhora o trânsito do estômago e do intestino, ajudando em casos de má digestão ou empachamento.Refluxo: Reduz o retorno do conteúdo ácido do estômago para o esôfago. -Exames: Facilita o esvaziamento gástrico antes de exames como endoscopia ou procedimentos radiológicos.",
+    descricao: "O carvedilol é um medicamento betabloqueador com ação vasodilatadora, usado principalmente para tratar a pressão alta, a insuficiência cardíaca e a angina (dor no peito).",
+    efeitocolateral: "-Venda sob prescrição: Exige receita médica para a compra. -Efeito mais comum: Pode causar sonolência. Evite dirigir ou operar máquinas se sentir esse sintoma. -Restrições: Não é indicado para prisão de ventre e não deve ser usado sem avaliação médica para descobrir a causa dos sintomas.",
+  },
 };
 
 const MIN_CONFIDENCE=.85, STABLE_FRAMES=7;
